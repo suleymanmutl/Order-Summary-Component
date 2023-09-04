@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Pale-blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.summary-container {
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.img,
+img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info-section .head {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+
+.info-section .description {
+  font-size: 16px;
+  color: var(--Desaturated-blue);
+  line-height: 25px;
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2.5rem;
+  gap: 10px;
+}
+
+.price-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Very-pale-blue);
+  width: 100%;
+  border-radius: 10px;
+  padding: 1.6rem;
+  margin-top: 10px;
+}
+
+.annual-plan {
+  margin-right: 3rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+.price p {
+  color: var(--Desaturated-blue);
+  font-weight: 550;
+}
+
+.fa-solid {
+  background-color: var(--Pale-blue);
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--Desaturated-blue);
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  background-color: var(--Very-Pale-blue);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: bold;
+  color: var(--Desaturated-blue);
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  transition: 0.3s;
+}
